@@ -1,0 +1,81 @@
+/* App Name: 
+   Author: Aquino, Neo F.
+   File: express-get - styles.css 
+   Description: This program adds some style and structure to the content*/
+
+html, body {
+  background:#ffae00;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 16px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  background: white;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  position: relative;
+  overflow: hidden;
+  margin-top: 12px;
+  width: 425px;
+}
+
+form > div {
+  order: 2;
+}
+
+label {
+  font-size: 16px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  display: block;
+  color: #607db8;
+  font-weight: 800;
+  font-size: 16px;
+  Letter-spacing: 1px;
+  color: #800909;
+}
+
+input[type="text"] {
+  width: 80%;
+  margin-left: 23px;
+  margin-right: 25px;
+  padding: 10px 20px;
+  outline: none;
+  font-weight: 400;
+  border: 1px solid #607d8b;
+  font-size: 16px;
+  Letter-spacing: 1px;
+  color: #607db8;
+  background: transparent;
+  border-radius: 5px; 
+}
+
+input[type="submit"] {
+  background: #942121;
+  color: #fff;
+  outline: none;
+  border: none;
+  font-weight: 1000;
+  cursor: pointer;
+  width: 47%;
+  margin-top: 10px;
+  margin-left: 105px;
+  margin-bottom: -5px;
+  padding: 20px;
+  border-radius: 12px;  
+}
+
+input[type="submit"]:hover {
+  background: #000414;
+}

@@ -1,0 +1,95 @@
+<!-- Aquino, Neo F. -->
+<!-- index.html -->
+<!-- Figure 17. Using v-show, Figure 18. Embedding the JS code in HTML using v-for -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Insert here the link to the CDN Vue package -->
+
+    <script src="https://unpkg.com/vue@3.0.2"></script>
+
+    <title>Vue JS Demo Application</title>
+  </head>
+
+  <body>
+    <!-- Create a div tag with "app" ID -->
+    <div id="app">
+
+      <h2>"Figure 9, using Directives"</h2>
+
+      <p>{{ title }} - {{ author }} - {{ age }}</p>
+      <!-- Events on Vue using v-on -->
+      <button v-on:click="age++">Get Older</button>
+      <button v-on:click="age--">Get Younger</button>
+      <button @click="title = 'The title has changed.'">Change Title</button>
+    </div>
+    
+    <!-- Insert the below code to link to app.js -->
+    <script src="app.js"></script>
+
+    <br/>
+
+    <h2>"Figure 12, implementing two-way data binding"</h2>
+
+    <div id="two-way-binding">
+      <p>{{ message }}</p>
+      <input v-model="message" />
+    </div>
+
+    <!-- link to twoway.js -->
+    <script src="twoway.js"></script>
+
+    <br/>
+
+    <h2>"Figure 14, using v-if statement"</h2>
+
+    <!-- using v-if -->
+    <div id="conditional-rendering">
+      <span v-if="seen">Now you see me</span>
+    </div>
+
+    <!-- link to conditionalif.js -->
+    <script src="conditionalif.js"></script>
+
+    <br/>
+
+    <h2>"Figure 16, using v-if and v-else statements"</h2>
+
+    <!-- this is hooked up  to a method in the books.js -->
+    <div id="books">
+      <div v-if="showBooks">
+        <p>{{ btitle }} - {{ bauthor }} - {{ year }}</p>
+      </div>
+
+      <button @click="toggleShowBooks">
+        <span v-if="showBooks">Hide Books</span>
+        <span v-else>Show Books</span>
+      </button>
+    </div>
+
+    <!-- link to books.js -->
+    <script src="books.js"></script>
+ 
+    <br/>
+
+    <h2>"Figure 19, demonstrating v-for"</h2>
+    <h1 v-show="ok">Hello!</h1>
+
+    <div id="list-rendering">
+      <ol>
+        <li v-for="todo in todos">
+          {{ todo.text }}
+        </li>
+      </ol>
+    </div>
+
+    <!-- link to liftfor.js -->
+    <script src="listfor.js"></script>
+
+  </body>
+</html>

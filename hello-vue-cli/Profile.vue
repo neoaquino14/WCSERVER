@@ -1,3 +1,6 @@
+// Aquino, Neo F. 
+// Profile.vue
+
 <template>
   <div id="profile">
     <div class="container">

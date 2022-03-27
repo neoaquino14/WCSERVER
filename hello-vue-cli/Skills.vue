@@ -1,3 +1,6 @@
+// Aquino, Neo F. 
+// Skills.vue
+
 <template>
   <div id="skills">
     <div class="container">

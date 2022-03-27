@@ -1,3 +1,6 @@
+// Aquino, Neo F. 
+// Education.vue
+
 <template>
   <div id="education">
     <div class="container">
